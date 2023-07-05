@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from "react";
+import { render } from "react-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+  super(props)
 }
 
-export default App;
+  render() {
+    return(
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h3 className="dispaly-1 text-sucess" > React Lifecycle</h3>
+          </div>
+
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <button className="btn btn-outline-sucess">Mount</button>
+            <button className="btn btn-outline-danger float-end">Unmount</button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  }
+  export default App
